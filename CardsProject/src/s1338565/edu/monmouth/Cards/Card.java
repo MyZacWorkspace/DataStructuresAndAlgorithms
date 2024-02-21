@@ -3,37 +3,36 @@ package s1338565.edu.monmouth.Cards;
 
 public class Card 
 {
-	
-	private int rank;
-	private int suit;
+	private Rank rank;
+	private Suit suit;
 	public final static int MAXRANK = 13;
 	public final static int MINRANK = 1;
 	public final static int MAXSUIT = 4;
 	public final static int MINSUIT = 1;
 	
-	public Card(int rank, int suit)
+	public Card(Rank rank, Suit suit)
 	{
 		this.rank = rank;
 		this.suit = suit;
 	}
 	
-	public int getSuit()
+	public Suit getSuit()
 	{
 		return suit;
 	}
 	
-	public void setSuit(int suit)
+	public void setSuit(Suit suit)
 	{
 		this.suit = suit;
 	}
 	
 	
-	public int getRank()
+	public Rank getRank()
 	{
 		return rank;
 	}
 	
-	public void setRank(int rank)
+	public void setRank(Rank rank)
 	{
 		this.rank = rank;
 	}
