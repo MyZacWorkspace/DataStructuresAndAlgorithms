@@ -103,10 +103,30 @@ public class Deck
 				drawn  = deck[select];
 			}
 		}
-		//deck = newDeck.toArray();
+		
+		deck = new Card[deck.length - 1];
+
+		for(int i = 0 ; i < deck.length ; i++)
+		{ deck[i] = newDeck.get(i); }
+
 		newDeck = null;
-		return drawn;
+		return drawn; 
 	}
 	
+	public int cardsLeft()
+	{ return deck.length; }
 	
+	@Override
+	public String toString()
+	{
+		String str = "";
+		str += "Deck Data\n";
+		for(int c = 0; c < deck.length ; c++)
+		{
+			str += "Card " + (c+1) + " " + deck[c] + " \n";
+		}
+
+		return str;
+
+	}
 }
