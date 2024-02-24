@@ -1,5 +1,7 @@
 package s1338565.edu.monmouth.Cards;
 
+import java.util.Arrays;
+
 public class DeckOfCards {
 
 	public static void main(String[] args) 
@@ -16,7 +18,7 @@ public class DeckOfCards {
 		Deck d = new Deck();
 		System.out.print(d);
 		
-		
+		/*
 		d.shuffle();
 		System.out.println(d);
 		
@@ -25,6 +27,9 @@ public class DeckOfCards {
 		System.out.println(d);
 
 		System.out.println("Cards left: " + d.cardsLeft());
+		*/
+
+		//System.out.println("You Get: " + Arrays.toString(d.deal(5)));
 		
 	}
 

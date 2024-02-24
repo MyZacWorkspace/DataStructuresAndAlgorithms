@@ -2,6 +2,7 @@ package s1338565.edu.monmouth.Cards;
 
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Deck 
 {
@@ -123,18 +124,24 @@ public class Deck
 	
 	public int cardsLeft()
 	{ return deck.length; }
+
+	public Card[] deal(int cardsToDeal)
+	{
+		Card[] hand = new Card[cardsToDeal];
+
+		for(int h = 0 ; h < cardsToDeal ; h++)
+		{
+			hand[h] = draw();
+		}
+
+		return hand;
+	}
 	
 	@Override
 	public String toString()
 	{
-		String str = "";
-		str += "Deck Data\n";
-		for(int c = 0; c < deck.length ; c++)
-		{
-			str += "Card " + (c+1) + " " + deck[c] + " \n";
-		}
 
-		return str;
+		return Arrays.toString(deck);
 
 	}
 }
