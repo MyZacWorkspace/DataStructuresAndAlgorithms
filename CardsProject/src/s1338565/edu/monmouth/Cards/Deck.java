@@ -10,20 +10,22 @@ public class Deck
 	public Deck()
 	{
 		deck = new Card[DeckConstants.MAXCARDSINDECK];
-		
-		//13*4 = 52
-		for(int s = Card.MINSUIT ; s <= Card.MAXSUIT; s++)
+
+		Rank[] ranks = Rank.values();
+		Suit[] suits = Suit.values();
+	
+		for(int s = Card.MINSUIT.ordinal(); s <= Card.MAXSUIT.ordinal(); s++)
 		{
-			for(int r = Card.MINRANK ; r <= Card.MAXRANK ; r++)
+			for(int r = Card.MINRANK.ordinal(); r <= Card.MAXRANK.ordinal(); r++)
 			{
-				if(s > 1)
-					deck[((s-1)*13) + (r - 1)] = new Card(r,s);
+				if(s >= 1)
+					deck[(s*13) + (r)] = new Card(ranks[r],suits[s]);
 				else
-					deck[(s*r) - 1] = new Card(r,s);
+					deck[r] = new Card(ranks[r],suits[s]);
 			}
 			
 		}
-		
+	
 		/*For Debugging
 		for(Card c : deck)
 		{
@@ -86,6 +88,12 @@ public class Deck
 	
 	public Card draw()
 	{
+		//FIXME Consider turning this into an exception
+		if(cardsLeft() == 0)
+		{
+			System.out.println("No more cards left");
+			return null;
+		}
 		Random ran = new Random();
 		int select = ran.nextInt(deck.length);
 		Card drawn = null;

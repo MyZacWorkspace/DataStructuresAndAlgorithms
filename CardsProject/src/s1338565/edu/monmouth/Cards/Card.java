@@ -4,11 +4,11 @@ package s1338565.edu.monmouth.Cards;
 public class Card 
 {
 	private Rank rank;
-	private Suit suit;
-	public final static int MAXRANK = 13;
-	public final static int MINRANK = 1;
-	public final static int MAXSUIT = 4;
-	public final static int MINSUIT = 1;
+	private Suit suit;	
+	public final static Rank MAXRANK = Rank.KING;
+	public final static Rank MINRANK = Rank.ACE;
+	public final static Suit MAXSUIT = Suit.HEART;
+	public final static Suit MINSUIT = Suit.DIAMOND;
 	
 	public Card(Rank rank, Suit suit)
 	{
@@ -40,7 +40,7 @@ public class Card
 	@Override
 	public String toString()
 	{
-		return "Card Rank and Suit: " + rank + " " + suit;
+		return rank + " of " + suit + "S";
 	}
 }
 //End of Class
