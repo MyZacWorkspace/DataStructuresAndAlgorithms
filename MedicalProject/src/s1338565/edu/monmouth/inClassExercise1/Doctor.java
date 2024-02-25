@@ -2,8 +2,10 @@ package s1338565.edu.monmouth.inClassExercise1;
 
 public class Doctor 
 {
+	public static int NUMDOCS = 0;
+
 	private String name, specialization;
-	private static int numDocs;
+
 	public String getName() 
 	{
 		return name;
@@ -11,6 +13,7 @@ public class Doctor
 	
 	public Doctor(String name, String specialization) 
 	{
+		NUMDOCS++;
 		this.name = name;
 		this.specialization = specialization;
 	}
