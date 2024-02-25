@@ -1,0 +1,3 @@
+Max number of doctors reached!
+s1338565.edu.monmouth.inClassExercise1.DoctorException: Max number of doctors reached!
+	at s1338565.edu.monmouth.inClassExercise1.DrClient.main(DrClient.java:33)
