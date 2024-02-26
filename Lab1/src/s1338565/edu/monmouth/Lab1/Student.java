@@ -47,6 +47,6 @@ public class Student
 	@Override
 	public String toString()
 	{
-		return "Student Data: \nName: " + name + "\nAge: " + age + "\nID: " + id;
+		return "Student: \nName: " + name + "\nAge: " + age + "\nID: " + id;
 	}
 }

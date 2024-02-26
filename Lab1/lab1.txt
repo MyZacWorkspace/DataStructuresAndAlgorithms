@@ -1,1 +1,76 @@
-Hi
+Size of students array: 5
+Student data: 
+Student: 
+Name: John
+Age: 18
+ID: 100
+Student: 
+Name: Jane
+Age: 18
+ID: 101
+Student: 
+Name: Larry
+Age: 20
+ID: 102
+Student: 
+Name: Karen
+Age: 20
+ID: 103
+Student: 
+Name: Karl
+Age: 21
+ID: 104
+
+Students who are younger than 20: 
+Student: 
+Name: John
+Age: 18
+ID: 100
+Student: 
+Name: Jane
+Age: 18
+ID: 101
+
+newStudents data: 
+Student: 
+Name: John
+Age: 18
+ID: 100
+Student: 
+Name: Jane
+Age: 18
+ID: 101
+Student: 
+Name: Larry
+Age: 20
+ID: 102
+Student: 
+Name: Karen
+Age: 20
+ID: 103
+Student: 
+Name: Karl
+Age: 21
+ID: 104
+Student: 
+Name: Rolf
+Age: 22
+ID: 200
+Student: 
+Name: Dan
+Age: 23
+ID: 201
+
+First three in newStudents: 
+Student: 
+Name: John
+Age: 18
+ID: 100
+Student: 
+Name: Jane
+Age: 18
+ID: 101
+Student: 
+Name: Larry
+Age: 20
+ID: 102
