@@ -39,6 +39,18 @@ public class Doctor
 	}
 	
 	
-	
+	@Override
+	public boolean equals(Object otherDoctor)
+	{
+		if(((Doctor)otherDoctor).name == this.name)
+		{
+			return true;
+		}
+
+		if(!(otherDoctor instanceof Doctor))
+			return false;
+		
+		return false;
+	}
 
 }

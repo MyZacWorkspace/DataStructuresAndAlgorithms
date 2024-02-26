@@ -6,6 +6,7 @@ import java.io.PrintStream;
 public class Lab1 
 {
 	public static String OUTPUT;
+
 	public static void main(String[] args) 
 	{
 
