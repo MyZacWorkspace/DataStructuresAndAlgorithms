@@ -2,7 +2,7 @@ package s1338565.edu.monmouth.Cards;
 
 import java.util.Arrays;
 
-public class DeckOfCards {
+public class DeckOfCardOGTEST {
 
 	public static void main(String[] args) 
 	{

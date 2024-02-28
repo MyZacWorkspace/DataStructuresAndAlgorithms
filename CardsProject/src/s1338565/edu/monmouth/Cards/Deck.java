@@ -87,14 +87,14 @@ public class Deck
 		//System.out.println(copyDeck);
 	}
 	
-	public Card draw()
+	public Card draw() throws DeckException
 	{
-		//FIXME Consider turning this into an exception
+		
 		if(cardsLeft() == 0)
 		{
-			System.out.println("No more cards left");
-			return null;
+			throw new DeckException("No cards left, card cannot be drawn.");
 		}
+		
 		Random ran = new Random();
 		int select = ran.nextInt(deck.length);
 		Card drawn = null;
@@ -121,11 +121,12 @@ public class Deck
 		newDeck = null;
 		return drawn; 
 	}
-	
+
+
 	public int cardsLeft()
 	{ return deck.length; }
 
-	public Card[] deal(int cardsToDeal)
+	public Card[] deal(int cardsToDeal) throws DeckException
 	{
 		Card[] hand = new Card[cardsToDeal];
 

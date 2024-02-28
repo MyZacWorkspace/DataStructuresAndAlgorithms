@@ -1,6 +1,6 @@
 package s1338565.edu.monmouth.Cards;
 
-public class DeckOfCardTest {
+public class DeckOfCardTest2 {
 
 	public static void main(String args[] ) {
 		// verify Card constructor
@@ -17,17 +17,27 @@ public class DeckOfCardTest {
 		deck.shuffle();
 		System.out.println("Shuffled deck:\n" + deck);
 		
-		System.out.println("Draw card: " + deck.draw());
-		System.out.println("Draw card: " + deck.draw());
-		System.out.println("Draw card: " + deck.draw());
-		int cardsLeft = deck.cardsLeft();
-		System.out.println("cardsLeft: " + cardsLeft);
-		
-		
-		for(int i=0; i < cardsLeft+1; i++) {
+		try
+		{
 			System.out.println("Draw card: " + deck.draw());
+			System.out.println("Draw card: " + deck.draw());
+			System.out.println("Draw card: " + deck.draw());
+			int cardsLeft = deck.cardsLeft();
+			System.out.println("cardsLeft: " + cardsLeft);
+			
+			
+			for(int i=0; i < cardsLeft+1; i++) {
+				System.out.println("Draw card: " + deck.draw());
+			}
+			System.out.println("Complete");
 		}
-		System.out.println("Complete");
+		catch(DeckException de)
+		{
+			System.out.println(de.getMessage());
+			de.printStackTrace();
+			System.exit(-3);
+		}
+		
 	}
 
 }
