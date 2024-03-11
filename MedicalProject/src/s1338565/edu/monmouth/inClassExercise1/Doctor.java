@@ -14,6 +14,7 @@ public class Doctor
 	public Doctor(String name, String specialization) 
 	{
 		NUMDOCS++;
+		System.out.println("Doctor constructor");
 		this.name = name;
 		this.specialization = specialization;
 	}
