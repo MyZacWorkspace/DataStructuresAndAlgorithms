@@ -10,6 +10,11 @@ public class DealTest
         
         try
         {
+            if(args.length > 1 || args.length < 0)
+            {
+                System.out.println("Please provide only one command line argument. Program Terminating...");
+                System.exit(DeckConstants.BADNUMBEROFARGUMENTS);
+            }
             CARDSINHAND = Integer.parseInt(args[0]);
         }
         catch(ArrayIndexOutOfBoundsException e)
