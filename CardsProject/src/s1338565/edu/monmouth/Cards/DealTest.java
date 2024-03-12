@@ -51,14 +51,61 @@ public class DealTest
 			System.exit(-3);
 		}
 
-
-      
-
         System.out.println(Arrays.toString(player1Hand));
         System.out.println(Arrays.toString(player2Hand));
         System.out.println(Arrays.toString(player3Hand));
         System.out.println(Arrays.toString(player4Hand));
 
+        //Debugging
+        /*Ordinal starts counting at 0!
+        System.out.println("Debugging");
+        Card ch = new Card(Rank.ACE, Suit.HEART);
+        System.out.println(Rank.ACE.ordinal());
+        */
+
+        //Player 1
+        int rankSumP1 = 0;
+        for(Card c : player1Hand)
+        {
+            rankSumP1 += c.getRank().ordinal();
+        }
+
+        //Player 2
+        int rankSumP2 = 0;
+        for(Card c : player2Hand)
+        {
+            rankSumP2 += c.getRank().ordinal();
+        }
+
+
+        //Player 3
+        int rankSumP3 = 0;
+        for(Card c : player3Hand)
+        {
+            rankSumP3 += c.getRank().ordinal();
+        }
+
+
+        int rankSumP4 = 0;
+        for(Card c : player4Hand)
+        {
+            rankSumP4 += c.getRank().ordinal();
+        }
+
+        int[] rankSums = {rankSumP1, rankSumP2, rankSumP3, rankSumP4};
+        int maxRankSum = 0;
+        int maxRankSumPlayer = 0;
+        for(int r = 0 ; r < rankSums.length ; r++)
+        {
+            System.out.println("Player " + (r+1) + " sum: " + rankSums[r]);
+            if(rankSums[r] > maxRankSum)
+            {
+                maxRankSum = rankSums[r];
+                maxRankSumPlayer = r + 1;
+            }
+        }
+        System.out.println("Max Rank Sum for Player " + maxRankSumPlayer + ", " + maxRankSum);
         System.out.println("Cards in Deck: " + deck.cardsLeft());
+        
     }
 }
