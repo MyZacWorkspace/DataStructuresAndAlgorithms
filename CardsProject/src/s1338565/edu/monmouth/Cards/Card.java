@@ -42,5 +42,15 @@ public class Card
 	{
 		return rank + " of " + suit + "S";
 	}
+
+	@Override
+	public boolean equals(Object otherObject)
+	{
+		if(this.suit == ((Card)otherObject).getSuit()
+			&& this.rank == ((Card)otherObject).getRank())
+			return true;
+
+		return false;
+	}
 }
 //End of Class

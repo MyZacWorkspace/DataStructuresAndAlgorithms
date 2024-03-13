@@ -95,6 +95,9 @@ public class DealTest
         int[] rankSums = {rankSumP1, rankSumP2, rankSumP3, rankSumP4};
         int maxRankSum = 0;
         int maxRankSumPlayer = 0;
+        //Simultaneously, get minimum
+        int minRankSum = 0;
+        int minRankSumPlayer = 0;
         for(int r = 0 ; r < rankSums.length ; r++)
         {
             System.out.println("Player " + (r+1) + " sum: " + rankSums[r]);
@@ -103,9 +106,31 @@ public class DealTest
                 maxRankSum = rankSums[r];
                 maxRankSumPlayer = r + 1;
             }
+
+            //Different First Iteration
+            if(r == 0)
+            {
+                minRankSum = rankSums[r];
+                minRankSumPlayer = r + 1;
+            }
+            else if(rankSums[r] < minRankSum)
+            {
+                minRankSum = rankSums[r];
+                minRankSumPlayer = r + 1;
+            }
         }
         System.out.println("Max Rank Sum for Player " + maxRankSumPlayer + ", " + maxRankSum);
+        System.out.println("Min Rank Sum for Player " + minRankSumPlayer + ", " + minRankSum);
         System.out.println("Cards in Deck: " + deck.cardsLeft());
+
+        System.out.println("Testing equals");
+        Card c1 = new Card(Rank.ACE , Suit.DIAMOND);
+        Card c2 = new Card(Rank.ACE, Suit.DIAMOND);
+        Card c3 = new Card(Rank.JACK, Suit.HEART);
+
+        System.out.println("Card " + c1 + " and Card " + c1 + ": " + c1.equals(c1));
+        System.out.println("Card " + c1 + " and Card " + c2 + ": " + c1.equals(c2));
+        System.out.println("Card " + c1 + " and Card " + c3 + ": " + c1.equals(c3));
         
     }
 }

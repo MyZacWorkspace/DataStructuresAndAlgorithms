@@ -1,0 +1,57 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "DealTest",
+            "request": "launch",
+            "mainClass": "s1338565.edu.monmouth.Cards.DealTest",
+            "projectName": "CardsProject",
+            "args": "4"
+        },
+        {
+            "type": "java",
+            "name": "DeckOfCardOGTEST",
+            "request": "launch",
+            "mainClass": "s1338565.edu.monmouth.Cards.DeckOfCardOGTEST",
+            "projectName": "CardsProject"
+        },
+        {
+            "type": "java",
+            "name": "DeckOfCardTest2",
+            "request": "launch",
+            "mainClass": "s1338565.edu.monmouth.Cards.DeckOfCardTest2",
+            "projectName": "CardsProject"
+        },
+        {
+            "type": "java",
+            "name": "Lab1",
+            "request": "launch",
+            "mainClass": "s1338565.edu.monmouth.Lab1.Lab1",
+            "projectName": "Lab1"
+        },
+        {
+            "type": "java",
+            "name": "DoctorsFromFile",
+            "request": "launch",
+            "mainClass": "s1338565.edu.monmouth.inClassExercise1.DoctorsFromFile",
+            "projectName": "MedicalProject"
+        },
+        {
+            "type": "java",
+            "name": "DrClient",
+            "request": "launch",
+            "mainClass": "s1338565.edu.monmouth.inClassExercise1.DrClient",
+            "projectName": "MedicalProject"
+        }
+    ]
+}
