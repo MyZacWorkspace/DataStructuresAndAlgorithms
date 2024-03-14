@@ -131,6 +131,9 @@ public class DealTest
         System.out.println("Card " + c1 + " and Card " + c1 + ": " + c1.equals(c1));
         System.out.println("Card " + c1 + " and Card " + c2 + ": " + c1.equals(c2));
         System.out.println("Card " + c1 + " and Card " + c3 + ": " + c1.equals(c3));
+
+        System.out.println("\nCard Node Testing");
+        
         
     }
 }
