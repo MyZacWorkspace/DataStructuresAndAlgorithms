@@ -14,9 +14,20 @@ public class ListCardNode {
 		return null;
 	  }
 	  
+	  //FIXME will need to account for null card value parameters (also if list is empty)
 	 public CardNode insertAfter(Card searchValue, Card element) { 
-		// placeholder
-		return null;
+
+		CardNode currentNode = head;
+		
+		while(!(currentNode.getCard().equals(searchValue)) && currentNode.getNext() != null)
+		{
+			currentNode = currentNode.getNext();
+		}
+
+		CardNode cardInsert = new CardNode(element);
+		currentNode.setNext(cardInsert);
+
+		return cardInsert;
 	}
 	 
 
@@ -24,7 +35,14 @@ public class ListCardNode {
 		  
 	  }
 
+	  //FIXME will need to account for null card value parameter (also if list is empty)
 	  public void insertEnd(Card element) {
+		CardNode currentNode = head;
+		while(currentNode != null || currentNode.getNext() != null)
+		{
+			currentNode = currentNode.getNext();
+		}
+		currentNode.setNext(new CardNode(element));
 	} 
 
 	  public boolean isEmpty() {              
@@ -46,18 +64,19 @@ public class ListCardNode {
 		// placeholder
 		return "";
 	  }
+
 	//Just using head 
 	public String printReverse() {
 		CardNode currentNode = head;
 		//Get Last
-		while(currentNode.getNext() != null)
+		while(currentNode != null || currentNode.getNext() != null)
 		{
 			currentNode = currentNode.getNext();
 		}
 		//Start from Last to first
 		StringBuilder sb = new StringBuilder();
 		sb.append("[");
-		while(currentNode.getPrevious() != null)
+		while(currentNode != null || currentNode.getPrevious() != null)
 		{
 			sb.append(currentNode + ", ");
 			currentNode = currentNode.getPrevious();
