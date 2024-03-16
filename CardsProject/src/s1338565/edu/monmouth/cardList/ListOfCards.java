@@ -39,11 +39,11 @@ public class ListOfCards
 		System.out.println("List after card added at end: " + list);
 		
 		Card cardToRemove = new Card(Rank.QUEEN, Suit.CLUB);
-		System.out.println(list.remove());
+		System.out.println(list.remove(cardToRemove));
 		System.out.println("List after attempted remove of " + cardToRemove + "\n" + list);
 
 		cardToRemove = new Card(Rank.ACE, Suit.CLUB);
-		System.out.println(list.remove());
+		System.out.println(list.remove(cardToRemove));
 		System.out.println("List after attempted removal of " + cardToRemove + "\n" + list);		
 	}
 
