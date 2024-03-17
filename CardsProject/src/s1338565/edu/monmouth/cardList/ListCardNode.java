@@ -4,10 +4,16 @@ import s1338565.edu.monmouth.Cards.*;
 
 public class ListCardNode {
 	  private CardNode head; 
-	  private CardNode tail;//To be implemented at a future point
+	  private CardNode tail;
 
 	  public ListCardNode() {
 	    head = null;
+		tail = null;
+	  }
+
+	  public CardNode getTail()
+	  {
+		return tail;
 	  }
 	  
 	  //Only works for one instance of the Card we want to remove
@@ -47,6 +53,10 @@ public class ListCardNode {
 		cardInsert.setNext(currentNode.getNext());
 		currentNode.setNext(cardInsert);
 
+		if(cardInsert.getNext() == null)
+		{
+			tail = cardInsert;
+		}
 		return cardInsert;
 	}
 	 
@@ -56,9 +66,21 @@ public class ListCardNode {
 
 		newNode.setNext(head);
 		if(!isEmpty())
+		{
 			head.setPrevious(newNode);
+		}
+
 
 		head = newNode;
+		if(size() == 1)
+		{
+			tail = newNode;
+		}
+		if(size() == 2)
+		{
+			tail = newNode.getNext();
+		}
+		
 		  
 	  }
 
@@ -77,6 +99,7 @@ public class ListCardNode {
 		CardNode cardInsert = new CardNode(element);
 		cardInsert.setPrevious(currentNode);
 		currentNode.setNext(cardInsert);
+		tail = cardInsert;
 	} 
 
 	  public boolean isEmpty() {    
@@ -134,7 +157,35 @@ public class ListCardNode {
 		
 	  }
 
+
+	//PrintReverse now with tail
+	
+	public String printReverse()
+	{
+		StringBuilder sb = new StringBuilder();
+		sb.append("[");
+
+		CardNode currentNode = tail;
+
+		if(!isEmpty())
+		{
+			while(currentNode != null)
+			{
+				if(currentNode.getPrevious() == null)
+					sb.append(currentNode);
+				else
+					sb.append(currentNode + ", ");
+
+				currentNode = currentNode.getPrevious();
+			}
+		}
+
+		sb.append("]");
+
+		return sb.toString();
+	}
 	//Just using head 
+	/*
 	public String printReverse() {
 		CardNode currentNode = head;
 		//Get Last
@@ -167,4 +218,5 @@ public class ListCardNode {
 
 		return sb.toString();
 	}
+	*/
 }
