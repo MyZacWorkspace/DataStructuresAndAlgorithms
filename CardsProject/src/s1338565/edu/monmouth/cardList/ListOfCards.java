@@ -55,6 +55,20 @@ public class ListOfCards
 		System.out.println(list.remove(cardToRemove));
 		System.out.println("List after attempted removal of " + cardToRemove + "\n" + list);	
 		System.out.println("Current tail: " + list.getTail());	
+
+		Card js = new Card(Rank.JACK, Suit.SPADE);
+		list.insert(js);
+		list.insert(js);
+		System.out.println(list);
+		System.out.println("Number of " + (new Card(Rank.JACK, Suit.SPADE)) + ": ");
+		System.out.println(list.howMany(new Card(Rank.JACK, Suit.SPADE)));
+
+		list.uniqueInsert(js);
+		System.out.println(list);
+		list.uniqueInsert(new Card(Rank.THREE, Suit.HEART));
+		System.out.println(list);
+		list.uniqueInsert(new Card(Rank.KING, Suit.DIAMOND));
+		System.out.println(list.printReverse());
 	}
 
 }

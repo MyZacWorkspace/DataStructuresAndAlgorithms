@@ -159,7 +159,6 @@ public class ListCardNode {
 
 
 	//PrintReverse now with tail
-	
 	public String printReverse()
 	{
 		StringBuilder sb = new StringBuilder();
@@ -184,6 +183,37 @@ public class ListCardNode {
 
 		return sb.toString();
 	}
+
+	public int howMany(Card element)
+	{
+		int counter = 0;
+		CardNode currentNode = head;
+
+		if(isEmpty())
+		{
+			return 0;
+		}
+		else
+		{
+			do
+			{
+				if(currentNode.getCard().equals(element))
+					counter++;
+				currentNode = currentNode.getNext();
+			}while(currentNode != null);
+		}
+
+		return counter;
+	}
+
+	public void uniqueInsert(Card element)
+	{
+		if(howMany(element) == 0)
+			insert(element);
+		else
+			System.out.println("Card already exists");
+	}
+
 	//Just using head 
 	/*
 	public String printReverse() {
