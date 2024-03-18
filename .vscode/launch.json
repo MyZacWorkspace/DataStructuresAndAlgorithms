@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HashSlingingSlasher",
+            "request": "launch",
+            "mainClass": "HashSlingingSlasher"
+        },
+        {
+            "type": "java",
             "name": "ListOfCards",
             "request": "launch",
             "mainClass": "s1338565.edu.monmouth.cardList.ListOfCards",
