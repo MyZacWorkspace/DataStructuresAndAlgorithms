@@ -46,11 +46,19 @@ public class Card
 	@Override
 	public boolean equals(Object otherObject)
 	{
-		if(this.suit == ((Card)otherObject).getSuit()
-			&& this.rank == ((Card)otherObject).getRank())
+		System.out.println("Returning equality");
+		if (this.suit == ((Card) otherObject).getSuit()
+				&& this.rank == ((Card) otherObject).getRank())
 			return true;
 
 		return false;
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		System.out.println("Returning hash");
+		return getRank().hashCode() + getSuit().hashCode();
 	}
 }
 //End of Class

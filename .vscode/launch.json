@@ -6,6 +6,28 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HashTester",
+            "request": "launch",
+            "mainClass": "s1338565.edu.monmouth.Cards.HashTester"
+        },
+        {
+            "type": "java",
+            "name": "DealTest",
+            "request": "launch",
+            "mainClass": "s1338565.edu.monmouth.Cards.DealTest",
+            "projectName": "",
+            "args": "4"
+        },
+        {
+            "type": "java",
+            "name": "DealTest",
+            "request": "launch",
+            "mainClass": "s1338565.edu.monmouth.Cards.DealTest",
+            "projectName": "CardsProject",
+            "args": "4"
+        },
+        {
+            "type": "java",
             "name": "HashSlingingSlasher",
             "request": "launch",
             "mainClass": "HashSlingingSlasher"

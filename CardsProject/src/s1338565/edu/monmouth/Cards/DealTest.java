@@ -132,7 +132,14 @@ public class DealTest
         System.out.println("Card " + c1 + " and Card " + c2 + ": " + c1.equals(c2));
         System.out.println("Card " + c1 + " and Card " + c3 + ": " + c1.equals(c3));
 
-        System.out.println("\nCard Node Testing");
+        System.out.println("\nCard Hash Testing");
+
+        System.out.println("C1 hashCode: " + c1.hashCode());
+        System.out.println("C2 hashCode: " + c2.hashCode());
+        System.out.println("C3 hashCode: " + c3.hashCode());
+
+        System.out.println(c1.hashCode() == c2.hashCode());
+        System.out.println(c1.hashCode() == c3.hashCode());
         
         
     }
