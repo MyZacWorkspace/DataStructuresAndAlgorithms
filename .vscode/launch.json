@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ListClient",
+            "request": "launch",
+            "mainClass": "ListClient",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "CaeasarCipherClient",
+            "request": "launch",
+            "mainClass": "edu.monmouth.CaeserCipher.CaeasarCipherClient",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "HashTester",
             "request": "launch",
             "mainClass": "s1338565.edu.monmouth.Cards.HashTester"
