@@ -1,0 +1,92 @@
+Iterating forward through list
+Car with engine size 1
+Car with engine size 1 accelerates!
+Car with engine size 1 brakes!
+Car with engine size 3
+Car with engine size 3 accelerates!
+Car with engine size 3 brakes!
+Car with engine size 4
+Car with engine size 4 accelerates!
+Car with engine size 4 brakes!
+Car with engine size 10
+Car with engine size 10 accelerates!
+Car with engine size 10 brakes!
+Boat with length of 12
+Boat with length of 12 spins the propellers!
+Boat with length of 12 slows down to a stop!
+Boat with length of 15
+Boat with length of 15 spins the propellers!
+Boat with length of 15 slows down to a stop!
+Boat with length of 22
+Boat with length of 22 spins the propellers!
+Boat with length of 22 slows down to a stop!
+Boat with length of 25
+Boat with length of 25 spins the propellers!
+Boat with length of 25 slows down to a stop!
+Boat with length of 26
+Boat with length of 26 spins the propellers!
+Boat with length of 26 slows down to a stop!
+Iterating backwards through list
+Boat with length of 26
+Boat with length of 26 spins the propellers!
+Boat with length of 26 slows down to a stop!
+Boat with length of 25
+Boat with length of 25 spins the propellers!
+Boat with length of 25 slows down to a stop!
+Boat with length of 22
+Boat with length of 22 spins the propellers!
+Boat with length of 22 slows down to a stop!
+Boat with length of 15
+Boat with length of 15 spins the propellers!
+Boat with length of 15 slows down to a stop!
+Boat with length of 12
+Boat with length of 12 spins the propellers!
+Boat with length of 12 slows down to a stop!
+Car with engine size 10
+Car with engine size 10 accelerates!
+Car with engine size 10 brakes!
+Car with engine size 4
+Car with engine size 4 accelerates!
+Car with engine size 4 brakes!
+Car with engine size 3
+Car with engine size 3 accelerates!
+Car with engine size 3 brakes!
+Car with engine size 1
+Car with engine size 1 accelerates!
+Car with engine size 1 brakes!
+List list is size: 9
+Iterating forward after removal of Car with engineSize 4
+Car with engine size 1
+Car with engine size 3
+Car with engine size 10
+Boat with length of 12
+Boat with length of 15
+Boat with length of 22
+Boat with length of 25
+Boat with length of 26
+Car with engine size 0 is present in list: false
+Car with engine size 3 is present in list: true
+null is present in list: false
+Iterating forward after removal of Boat with boatLength of 15
+Car with engine size 1
+Car with engine size 3
+Car with engine size 10
+Boat with length of 12
+Boat with length of 22
+Boat with length of 25
+Boat with length of 26
+Contents of array
+Car with engine size 1 accelerates!
+Car with engine size 1 brakes!
+Car with engine size 3 accelerates!
+Car with engine size 3 brakes!
+Car with engine size 10 accelerates!
+Car with engine size 10 brakes!
+Boat with length of 12 spins the propellers!
+Boat with length of 12 slows down to a stop!
+Boat with length of 22 spins the propellers!
+Boat with length of 22 slows down to a stop!
+Boat with length of 25 spins the propellers!
+Boat with length of 25 slows down to a stop!
+Boat with length of 26 spins the propellers!
+Boat with length of 26 slows down to a stop!
