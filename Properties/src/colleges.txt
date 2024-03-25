@@ -1,0 +1,4 @@
+name=Monmouth University,Brookdale College,Rutgers University
+town=West Long Branch,Lincroft,New Brunswick
+mascot=hawk,blue claw,scarlet knight
+enrollment=6500,10000,37000

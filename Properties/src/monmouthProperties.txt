@@ -1,0 +1,4 @@
+name=Monmouth University
+town=West Long Branch
+mascot=hawk
+enrollment=6500

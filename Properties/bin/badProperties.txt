@@ -1,0 +1,3 @@
+ame=Unknown College
+twn=Red Bank
+mscot=knight
