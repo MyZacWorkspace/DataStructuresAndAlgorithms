@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PropertiesClient",
+            "request": "launch",
+            "mainClass": "PropertiesClient",
+            "projectName": "",
+            "args":"C:\\Users\\s1338565\\DataStructuresAndAlgorithms\\Properties\\src\\colleges.txt"
+        },
+        {
+            "type": "java",
             "name": "ListClient",
             "request": "launch",
             "mainClass": "ListClient",

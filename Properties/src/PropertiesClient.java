@@ -10,6 +10,8 @@ public class PropertiesClient
     public static void main(String[] args)
     {
         final String DELIMITER = ",";
+        final int EXPECTEDNUMBEROFELEMENTS = 3;
+        final int BADVALUE = -4;
         Properties properties = new Properties();
         if(args.length != 1)
         {
@@ -44,13 +46,29 @@ public class PropertiesClient
 
         String names[] = nameValue.split(DELIMITER);
         String enrolls[] = enrollmentValue.split(DELIMITER);
+
+        if(names.length != EXPECTEDNUMBEROFELEMENTS || enrolls.length != EXPECTEDNUMBEROFELEMENTS)
+        {
+            System.err.println("The number of name keys or the number of enrollment values is not " + EXPECTEDNUMBEROFELEMENTS + ". Program terminating...");
+            System.exit(EXPECTEDNUMBEROFELEMENTS);
+        }
         System.out.println(Arrays.toString(names));
         System.out.println(Arrays.toString(enrolls));
 
-        for(int kv = 0 ; kv < names.length && kv < enrolls.length ; kv++)
+        try
         {
-            myhm.put(names[kv] , Integer.parseInt(enrolls[kv]));
+            for(int kv = 0 ; kv < names.length && kv < enrolls.length ; kv++)
+            {
+                myhm.put(names[kv] , Integer.parseInt(enrolls[kv]));
+            }
         }
+        catch(NumberFormatException ne)
+        {
+            System.err.println("Could not parse enrollment value from " + Arrays.toString(enrolls));
+            ne.printStackTrace();
+            System.exit(BADVALUE);
+        }
+        
 
         System.out.println(myhm);
 
@@ -64,5 +82,6 @@ public class PropertiesClient
             Integer value = myhm.get(key);
             System.out.println("Key: " + key + "\nValue: " + value + "\n");
         }
+
     }
 }
