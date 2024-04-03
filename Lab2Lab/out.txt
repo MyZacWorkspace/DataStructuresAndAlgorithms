@@ -1,0 +1,48 @@
+States
+New Jersey and New Jersey 2 (hash)
+true
+New Jersey and New Jersey 2 (equals)
+true
+New Jersey and New York (hash)
+false
+New Jersey and New York (equals)
+false
+Governors
+New Jersey and New Jersey (hash)
+true
+New Jersey and New Jersey (equals)
+true
+New Jersey and New York (hash)
+false
+New Jersey and New York (equals)
+false
+Just added NJ true
+Just added NY true
+Just added PA true
+Just added DE true
+Just added MA true
+Just added CT true
+Just added NJ2 false
+State of Pennsylvania, coast length 0, State Bird Ruffled Grouse
+State of Connecticut, coast length 96, State Bird Robin
+State of Maryland, coast length 31, State Bird Oriole
+State of New Jersey, coast length 130, State Bird Eastern Goldfinch
+State of Delaware, coast length 28, State Bird Blue Hen
+State of New York, coast length 127, State Bird Eastern Bluebird
+Hash Map Size: 6
+Key: State of Pennsylvania, coast length 0, State Bird Ruffled Grouse
+Value: Governor Shapiro, Age 49
+Key: State of Connecticut, coast length 96, State Bird Robin
+Value: Governor Lamont, Age 69
+Key: State of Maryland, coast length 31, State Bird Oriole
+Value: Governor Moore, Age 44
+Key: State of New Jersey, coast length 130, State Bird Eastern Goldfinch
+Value: Governor Murphy, Age 65
+Key: State of Delaware, coast length 28, State Bird Blue Hen
+Value: Governor Carney, Age 66
+Key: State of New York, coast length 127, State Bird Eastern Bluebird
+Value: Governor Hochul, Age 64
+New York Governor: Governor Hochul, Age 64
+New Jersey is a key in the HashMap, true
+Governor Murphy, Age 65
+Rhode Island is a key in the HashMap, false
