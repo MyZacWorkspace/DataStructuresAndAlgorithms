@@ -6,11 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StackPretenderClient",
+            "request": "launch",
+            "mainClass": "StackPretenderClient",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "PropertiesClient",
             "request": "launch",
             "mainClass": "PropertiesClient",
             "projectName": "",
-            "args":"C:\\Users\\s1338565\\DataStructuresAndAlgorithms\\Properties\\src\\colleges.txt"
+            "args": "C:\\Users\\s1338565\\DataStructuresAndAlgorithms\\Properties\\src\\colleges.txt"
         },
         {
             "type": "java",
